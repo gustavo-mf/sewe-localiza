@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/select2.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- <link href="css/select2-bootstrap-5-theme.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bem vindo - SEWE</title>
+</head>
+
+<body style="background-color: white;" id="home">
+  <!-- 0 - Início - fundo -->
+  <div class="card card-img-container">
+    <img src="./img/mainBackground.png" class="card-img">
+    <div class="card-img-overlay">
+    </div>
+  </div>
+
+  <!-- 1 - MENU -->
+  <div style="background-color: #77e0e4; width: 100%; height: 10px;"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-light p-0 mt-4">
+    <div class="container-fluid">
+      <img src="img/logo-sewe.png" alt="Logo Sewe" class="logo-sewe">
+      <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#mobileMenuModal">
+        <span class="navbar-toggler-icon">
+          <img src="/img/icon-menu.png" alt="Icone menu" />
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item" style="margin-left: 20px">
+            <a href="#home" class="text-white" style="text-decoration: none; font-weight: bold;">Início</a>
+          </li>
+          <li class="nav-item" style="margin-left: 20px">
+            <a href="#como-funciona" class="text-white" style="text-decoration: none; font-weight: bold;">Como
+              Funciona</a>
+          </li>
+          <li class="nav-item" style="margin-left: 20px">
+            <a href="#localizador" class="text-white" style="text-decoration: none; font-weight: bold;">Localizador</a>
+          </li>
+          <li class="nav-item" style="margin-left: 20px">
+            <a href="https://www.seweconsultoria.com.br/" target="_blank" class="text-white"
+              style="text-decoration: none; font-weight: bold;">A Sewe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="mobileMenuModal" tabindex="-1" aria-labelledby="mobileMenuModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="img/logo-sewe.png" alt="Logo Sewe" class="logo-sewe">
+        </div>
+        <div class="modal-body">
+          <ul class="navbar-nav">
+            <li class="nav-item my-2">
+              <a href="#home" class="text-black" style="text-decoration: none; font-weight: bold;">Início</a>
+            </li>
+            <li class="nav-item my-2">
+              <a href="#como-funciona" class="text-black" style="text-decoration: none; font-weight: bold;">Como
+                Funciona</a>
+            </li>
+            <li class="nav-item my-2">
+              <a href="#localizador" class="text-black"
+                style="text-decoration: none; font-weight: bold;">Localizador</a>
+            </li>
+            <li class="nav-item my-2">
+              <a href="https://www.seweconsultoria.com.br/" target="_blank" class="text-black"
+                style="text-decoration: none; font-weight: bold;">A Sewe</a>
+            </li>
+          </ul>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/icon-close.png" alt="Fechar menu" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+
+      </a>
+    </div>
+  </nav>
+
+  <!-- 2 - APRESENTAÇÃO -->
+  <div id="firstContent" class="row text-white align-items-center justify-content-between">
+    <div class="col-lg-5 title-container">
+      <h1 style="font-weight: bolder;" class="text-left display-5">Obtenha agora sua lista de empresas atualizadas
+      </h1>
+      <div class="px-4 pt-2">
+        <p class="text-left">Ao disponibilizar uma lista detalhada de empresas com informações cruciais, nossa
+          plataforma permite que os
+          clientes encontrem rapidamente parceiros comerciais ideais, economizando tempo e recursos.
+        </p>
+        <p class="text-justify">Localiza Empresas surge como uma solução abrangente para superar esses desafios.</p>
+
+        <button type="button" class="btn btn-light btn-lg rounded-pill">Localizar Agora</button>
+      </div>
+    </div>
+    <div class="col-lg-6 text-center container-man">
+      <img src="./img/man.png" class="man-photo">
+    </div>
+  </div>
+
+  <div id="secondContent" class="container-md">
+    <!-- 3 - JORNADA DO JOAO -->
+    <div id="como-funciona" class="section-businessman row g-3">
+      <div class="journey-slick row px-0 mx-auto">
+        <div class="businessman-small col-lg-3 px-lg-0 pe-lg-3">
+          <div class="rounded shadow">
+            <div class="bg-white">
+              <div class="card border-0">
+                <img src="https://localizaempresa.com.br/Template/businessman.svg" class="rounded mx-auto d-block"
+                  alt="...">
+                <div class="card-body text-left px-4">
+                  <p class="card-text">Esse é o João, um profissional autônomo, que presta serviços de consultoria
+                    financeira
+                    para empresas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="businessman-small col-lg-3 px-lg-3">
+          <div class="rounded shadow">
+            <div class="bg-white">
+              <div class="card border-0">
+                <img src="https://localizaempresa.com.br/Template/businessman1.svg" class="rounded mx-auto d-block"
+                  alt="...">
+                <div class="card-body text-left px-4">
+                  <p class="card-text">Ele está buscando expandir sua carteira de clientes na área de tecnologia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="businessman-small col-lg-3 px-lg-3">
+          <div class="rounded shadow">
+            <div class="bg-white">
+              <div class="card border-0">
+                <img src="https://localizaempresa.com.br/Template/businessman3.svg" class="rounded mx-auto d-block"
+                  alt="...">
+                <div class="card-body text-left px-4">
+                  <p class="card-text">Antes de descobrir <strong>Localiza Empresas</strong>, João costumava depender de redes sociais e
+                    eventos do setor para encontrar potenciais clientes,</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="businessman-small col-lg-3 px-lg-0 ps-lg-3">
+          <div class="rounded shadow">
+            <div class="bg-white">
+              <div class="card border-0">
+                <img src="https://localizaempresa.com.br/Template/businessman2.svg" class="rounded mx-auto d-block"
+                  alt="...">
+                <div class="card-body text-left px-4">
+                  <p class="card-text">Um processo que consumia muito tempo e nem sempre resultava em leads qualificados.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="businessman-big col-lg-12 px-0 mt-4">
+        <div class="rounded shadow">
+          <div class="bg-white">
+            <div class="card border-0">
+              <div class="card-body text-center">
+                <div class="row" style="display: flex; align-items: center;">
+                  <div class="col-lg-2">
+                    <img src="https://localizaempresa.com.br/Template/businessman4.svg" class="rounded mx-auto d-block"
+                      alt="...">
+                  </div>
+                  <div class="col-lg-6">
+                    <p class="text-start">
+                      Mas agora com o <b>Localiza Empresas</b>, João encontra clientes qualificados em muito pouco tempo
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <button type="button" class="btn btn-dark btn-lg rounded-pill black fw-bold fs-6 py-1 px-4">Faça como João</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4 - FUNCIONALIDADEs -->
+    <div class="row g-3" style="margin-top: 70px">
+      <div class="col-lg-4 px-0 pe-lg-3">
+        <div class="bg-white" style="height: 100%;">
+          <div class="card border border-1" style="height: 100%;">
+            <div class="card-body text-left align-items-center d-flex">
+              <img src="img/icon-list1.png" width="50px;" style="margin-right: 10px;">
+              <p class="card-text" style="color: rgb(79, 79, 79);"><b>+50M</b> de empresas atualizadas em
+                <b>Jan/2024</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 px-0 px-lg-2">
+        <div class="bg-white" style="height: 100%;">
+          <div class="card border border-1" style="height: 100%;">
+            <div class="card-body text-left align-items-center d-flex">
+              <img src="img/icon-list2.png" width="50px;" style="margin-right: 10px;">
+              <p class="card-text" style="color: rgb(79, 79, 79);"><b>Informações organizadas</b> e formatadas em <b>
+                  xlsx, csv e txt</b></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 px-0 ps-lg-3">
+        <div class="bg-white" style="height: 100%;">
+          <div class="card border border-1" style="height: 100%;">
+            <div class="card-body text-left align-items-center d-flex">
+              <img src="img/icon-list3.png" width="50px;" style="margin-right: 10px;">
+              <p class="card-text" style="color: rgb(79, 79, 79);">Obtenha <b>razão social,</b> <b>nome fantasia,</b>
+                <b>endereço,</b> <b>telefone,</b> <b>e-mail,</b> <b>sócios</b> e muito mais
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 - FORMULÁRIO -->
+    <div id="localizador" class="section-businessman row g-3" style="margin-top: 70px">
+      <div class="businessman-big px-0 col-lg-12">
+        <div class="rounded shadow">
+          <div class="bg-white">
+            <div class="card border-0">
+              <div class="card-body px-5 py-4">
+                <div class="row" style="display: flex; align-items: center;">
+                  <div class="col-lg-12">
+                    <p>
+                      <img src="https://localizaempresa.com.br/Template/group.svg" style="display: inline; width: 20px; height: 20px;"> 
+                      <b class="fs-5 ms-2">Localizar Agora</b>
+                    </p>
+                    <p class="fs-6 mb-5">Escolha filtros, confira CNPJs e receba dados em até 1 dia útil pós-pagamento.</p>
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">Sitação</p>
+                    <select class="form-select rounded-3" id="multiple-select-clear-field" data-placeholder="" multiple>
+                      <option>Christmas Island</option>
+                      <option>South Sudan</option>
+                      <option>Jamaica</option>
+                      <option>Kenya</option>
+                      <option>French Guiana</option>
+                      <option>Mayotta</option>
+                      <option>Liechtenstein</option>
+                      <option>Denmark</option>
+                      <option>Eritrea</option>
+                      <option>Gibraltar</option>
+                      <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                      <option>Haiti</option>
+                      <option>Namibia</option>
+                      <option>South Georgia and the South Sandwich Islands</option>
+                      <option>Vietnam</option>
+                      <option>Yemen</option>
+                      <option>Philippines</option>
+                      <option>Benin</option>
+                      <option>Czech Republic</option>
+                      <option>Russia</option>
+                    </select>
+                  </div>
+
+                  <div class="col-lg-6 mb-4">
+                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">Porte da empresa</p>
+                    <select class="form-select rounded-3" id="multiple-select-clear-field2" data-placeholder="" multiple>
+                      <option>Christmas Island</option>
+                      <option>South Sudan</option>
+                      <option>Jamaica</option>
+                      <option>Kenya</option>
+                      <option>French Guiana</option>
+                      <option>Mayotta</option>
+                      <option>Liechtenstein</option>
+                      <option>Denmark</option>
+                      <option>Eritrea</option>
+                      <option>Gibraltar</option>
+                      <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                      <option>Haiti</option>
+                      <option>Namibia</option>
+                      <option>South Georgia and the South Sandwich Islands</option>
+                      <option>Vietnam</option>
+                      <option>Yemen</option>
+                      <option>Philippines</option>
+                      <option>Benin</option>
+                      <option>Czech Republic</option>
+                      <option>Russia</option>
+                    </select>
+                  </div>
+
+                  <div class="col-lg-6 mb-4">
+                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">Optante do MEI</p>
+                    <select class="form-select rounded-3" id="multiple-select-clear-field3" data-placeholder="" multiple>
+                      <option>Christmas Island</option>
+                      <option>South Sudan</option>
+                      <option>Jamaica</option>
+                      <option>Kenya</option>
+                      <option>French Guiana</option>
+                      <option>Mayotta</option>
+                      <option>Liechtenstein</option>
+                      <option>Denmark</option>
+                      <option>Eritrea</option>
+                      <option>Gibraltar</option>
+                      <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                      <option>Haiti</option>
+                      <option>Namibia</option>
+                      <option>South Georgia and the South Sandwich Islands</option>
+                      <option>Vietnam</option>
+                      <option>Yemen</option>
+                      <option>Philippines</option>
+                      <option>Benin</option>
+                      <option>Czech Republic</option>
+                      <option>Russia</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">Optante do simples</p>
+                    <select class="form-select rounded-3" id="multiple-select-clear-field4" data-placeholder="" multiple>
+                      <option>Christmas Island</option>
+                      <option>South Sudan</option>
+                      <option>Jamaica</option>
+                      <option>Kenya</option>
+                      <option>French Guiana</option>
+                      <option>Mayotta</option>
+                      <option>Liechtenstein</option>
+                      <option>Denmark</option>
+                      <option>Eritrea</option>
+                      <option>Gibraltar</option>
+                      <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                      <option>Haiti</option>
+                      <option>Namibia</option>
+                      <option>South Georgia and the South Sandwich Islands</option>
+                      <option>Vietnam</option>
+                      <option>Yemen</option>
+                      <option>Philippines</option>
+                      <option>Benin</option>
+                      <option>Czech Republic</option>
+                      <option>Russia</option>
+                    </select>
+                  </div>
+
+                  <div class="col-lg-6 mb-4">
+                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">UF</p>
+                    <select class="form-select rounded-3" id="multiple-select-clear-field5" data-placeholder="" multiple>
+                      <option>Christmas Island</option>
+                      <option>South Sudan</option>
+                      <option>Jamaica</option>
+                      <option>Kenya</option>
+                      <option>French Guiana</option>
+                      <option>Mayotta</option>
+                      <option>Liechtenstein</option>
+                      <option>Denmark</option>
+                      <option>Eritrea</option>
+                      <option>Gibraltar</option>
+                      <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                      <option>Haiti</option>
+                      <option>Namibia</option>
+                      <option>South Georgia and the South Sandwich Islands</option>
+                      <option>Vietnam</option>
+                      <option>Yemen</option>
+                      <option>Philippines</option>
+                      <option>Benin</option>
+                      <option>Czech Republic</option>
+                      <option>Russia</option>
+                    </select>
+                  </div>
+
+                  <div class="col-lg-6 mb-4">
+                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">Matriz</p>
+                    <select class="form-select rounded-3" id="multiple-select-clear-field6" data-placeholder="" multiple>
+                      <option>Christmas Island</option>
+                      <option>South Sudan</option>
+                      <option>Jamaica</option>
+                      <option>Kenya</option>
+                      <option>French Guiana</option>
+                      <option>Mayotta</option>
+                      <option>Liechtenstein</option>
+                      <option>Denmark</option>
+                      <option>Eritrea</option>
+                      <option>Gibraltar</option>
+                      <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                      <option>Haiti</option>
+                      <option>Namibia</option>
+                      <option>South Georgia and the South Sandwich Islands</option>
+                      <option>Vietnam</option>
+                      <option>Yemen</option>
+                      <option>Philippines</option>
+                      <option>Benin</option>
+                      <option>Czech Republic</option>
+                      <option>Russia</option>
+                    </select>
+                  </div>
+
+                  <div class="col-lg-6 mb-4">
+                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">Cidade</p>
+                    <select class="form-select rounded-3" id="multiple-select-clear-field7" data-placeholder="" multiple>
+                      <option>Christmas Island</option>
+                      <option>South Sudan</option>
+                      <option>Jamaica</option>
+                      <option>Kenya</option>
+                      <option>French Guiana</option>
+                      <option>Mayotta</option>
+                      <option>Liechtenstein</option>
+                      <option>Denmark</option>
+                      <option>Eritrea</option>
+                      <option>Gibraltar</option>
+                      <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                      <option>Haiti</option>
+                      <option>Namibia</option>
+                      <option>South Georgia and the South Sandwich Islands</option>
+                      <option>Vietnam</option>
+                      <option>Yemen</option>
+                      <option>Philippines</option>
+                      <option>Benin</option>
+                      <option>Czech Republic</option>
+                      <option>Russia</option>
+                    </select>
+                  </div>
+
+                  <div class="col-lg-6 mb-4">
+                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">CNAES</p>
+                    <select class="form-select rounded-3" id="multiple-select-clear-field8" data-placeholder="" multiple>
+                      <option>Christmas Island</option>
+                      <option>South Sudan</option>
+                      <option>Jamaica</option>
+                      <option>Kenya</option>
+                      <option>French Guiana</option>
+                      <option>Mayotta</option>
+                      <option>Liechtenstein</option>
+                      <option>Denmark</option>
+                      <option>Eritrea</option>
+                      <option>Gibraltar</option>
+                      <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                      <option>Haiti</option>
+                      <option>Namibia</option>
+                      <option>South Georgia and the South Sandwich Islands</option>
+                      <option>Vietnam</option>
+                      <option>Yemen</option>
+                      <option>Philippines</option>
+                      <option>Benin</option>
+                      <option>Czech Republic</option>
+                      <option>Russia</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-12 text-center">
+                    <br>
+                    <button type="button" class="btn btn-light btn-lg rounded-pill fs-6 fw-bold px-5 py-2 mt-5" style="background-color: #77e0e4; border: none;">Simular Valor</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 - Resultado formulário -->
+    <div class="section-businessman row g-3" style="margin-top: 70px">
+      <div class="businessman-big px-0 col-lg-12">
+        <div class="rounded shadow">
+          <div class="bg-white">
+            <div class="card border-0">
+              <div class="card-body" style="padding: 10px 50px 10px 50px">
+                <div class="row" style="display: flex; align-items: center;">
+
+                  <div class="col-lg-3">
+                    <p style="margin: 0px; padding: 0px; font-size: 12pt;">Total de Registros</p>
+                    <p><b>59.128.296</b></p>
+                  </div>
+                  <div class="col-lg-3">
+                    <p style="margin: 0px; padding: 0px; font-size: 12pt;">Valor total</p>
+                    <p><b>R$ 236.513,18</b></p>
+                  </div>
+                  <div class="col-lg-6 text-center">
+                    <button type="button" class="btn btn-dark btn-lg rounded-pill text"
+                      style="border: none; margin-right: 10px; margin-top: 10px">Nova consulta</button>
+                    <button type="button" class="btn btn-light btn-lg rounded-pill text"
+                      style="background-color: #77e0e4; border: none; margin-top: 10px" data-bs-toggle="modal"
+                      data-bs-target="#paymentModal">Processar pagamento</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 - Modal de pagamento -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Realizar pagamento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 - Modal de comunicação -->
+    
+    <div class="section-businessman row g-3" style="margin-top: 70px">
+      <div class="businessman-big px-0 col-lg-12">
+        <div class="rounded shadow">
+          <div class="bg-white">
+            <div class="card border-0">
+              <div class="card-body" style="padding: 10px 50px 10px 50px">
+                <div class="row" style="display: flex; align-items: center;">
+                  <div class="col-lg-3">
+                    <button type="button" class="btn btn-light btn-lg rounded-pill"
+                      style="background-color: #77e0e4; border: none;" data-bs-toggle="modal"
+                      data-bs-target="#pagamento-sucesso">Pago com sucesso</button>
+                  </div>
+                  <div class="col-lg-3">
+                    <button type="button" class="btn btn-light btn-lg rounded-pill"
+                      style="background-color: #77e0e4; border: none;" data-bs-toggle="modal"
+                      data-bs-target="#pagamento-recusado">Pagamento recusado</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="pagamento-sucesso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="display-6 text-center">Pagamento com sucesso</p>
+            <p class="text-center">Seu pagamento foi efetuado com sucesso, aguarde a confirmação.</p>
+            <p class="text-center">O arquivo será enviado em até um dia útil após a confirmação do pagamento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="pagamento-recusado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="display-6 text-center">Pagamento recusado</p>
+            <p class="text-center">Infelizmente algum problema aconteceu no processamento do pagamento, por favor tente novamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer style="margin-top: 70px; background-color: #1e1e1e; margin-bottom: 0px; height: 100px; padding-top: 38px;">
+    <p class="text-center" style="color: white;">© 2024 - Todos os Direitos Reservados</p>
+  </footer>
+
+
+  <script src="./js/jquery.slim.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/select2.full.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
