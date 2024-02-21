@@ -71,15 +71,19 @@ nav.navbar {
   width: 100%;
 }
 
-.section-businessman .businessman-small > div {
-  width: 100%;
-  height: 100%;
+.section-businessman > div > div {
   padding-top: 10px;
   background-color: #77e0e4;
 }
-.section-businessman .businessman-small > div > div {
+
+#como-funciona .businessman-small div > div {
   height: 100%;
   padding-top: 10px;
+}
+
+#como-funciona .businessman-small > div {
+  width: 100%;
+  height: 100%;
 }
 
 .section-businessman img {
@@ -88,6 +92,7 @@ nav.navbar {
 }
 
 .businessman-small {}
+
 .businessman-big p {
   font-size: 22px;
 }
@@ -102,9 +107,6 @@ nav.navbar {
 }
 
 .select2-container { width: 100% !important; }
-
-@media (min-width: 992px) and (max-width: 1900px) {
-}
 
 @media (min-width: 992px) and (max-width: 1370px) {
   nav.navbar, #firstContent, #secondContent {
@@ -128,7 +130,7 @@ nav.navbar {
   #mobileMenuModal .modal-dialog { margin: 0; }
 
   #mobileMenuModal .modal-dialog .modal-content {
-    height: 100vh; 
+    height: 100dvh; 
     background-color: #1E1E1E;
   }
 
@@ -175,25 +177,11 @@ nav.navbar {
     margin-top: -30px;
   }
 
-  .journey-slick {
-    padding: 0;
-    margin: 0 auto;
-  }
+  #como-funciona .businessman-big .card-body { padding-top: 0; }
 
-  .journey-slick .businessman-small {
-    padding: 0;
-    margin-bottom: 1em;
+  #como-funciona .businessman-big p {
+    font-size: 20px;
   }
-
-  .journey-slick.slick-initialized {
-    padding-left: 5%;
-  }
-
-  .journey-slick.slick-initialized .slick-list {
-    padding-right: 30%;
-  }
-
-  .journey-slick.slick-initialized .businessman-small { padding-right: 1.5em; }
 
   #como-funciona .businessman-big .card-body .col-lg-2 { width: 30%; }
 
