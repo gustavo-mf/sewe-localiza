@@ -31,7 +31,7 @@
       <img src="img/logo-sewe.png" alt="Logo Sewe" class="logo-sewe">
       <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#mobileMenuModal">
         <span class="navbar-toggler-icon">
-          <img src="/img/icon-menu.png" alt="Icone menu" />
+          <img src="./img/icon-menu.png" alt="Icone menu" />
         </span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -544,6 +544,11 @@
                       style="background-color: #77e0e4; border: none;" data-bs-toggle="modal"
                       data-bs-target="#pagamento-recusado">Pagamento recusado</button>
                   </div>
+                  <div class="col-lg-3">
+                    <button type="button" class="btn btn-light btn-lg rounded-pill"
+                      style="background-color: #77e0e4; border: none;" data-bs-toggle="modal"
+                      data-bs-target="#pagamento-com-boleto">Pagamento com boleto</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -566,6 +571,19 @@
       </div>
     </div>
     <div class="modal fade" id="pagamento-recusado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="display-6 text-center">Pagamento recusado</p>
+            <p class="text-center">Infelizmente algum problema aconteceu no processamento do pagamento, por favor tente novamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="pagamento-com-boleto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
