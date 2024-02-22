@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="canonical" href="https://www.localizaempresa.com.br/" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +14,20 @@
   <!-- <link href="css/select2-bootstrap-5-theme.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/style.css">
   <title>Bem vindo - SEWE</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PZD72DP4');</script>
+  <!-- End Google Tag Manager -->
 </head>
 
 <body style="background-color: white;" id="home">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZD72DP4"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <!-- 0 - Início - fundo -->
   <div class="card card-img-container">
     <img src="./img/mainBackground.png" class="card-img">
@@ -437,7 +449,7 @@
                   </div>
 
                   <div class="col-lg-6 mb-4">
-                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">CNAES</p>
+                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">Novas empresas</p>
                     <select class="form-select rounded-3" id="multiple-select-clear-field8" data-placeholder="" multiple>
                       <option>Christmas Island</option>
                       <option>South Sudan</option>
@@ -461,6 +473,59 @@
                       <option>Russia</option>
                     </select>
                   </div>
+
+                  <div class="col-lg-6 mb-4">
+                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">Classificação de CNAE</p>
+                    <select class="form-select rounded-3" id="multiple-select-clear-field9" data-placeholder="" multiple>
+                      <option>Christmas Island</option>
+                      <option>South Sudan</option>
+                      <option>Jamaica</option>
+                      <option>Kenya</option>
+                      <option>French Guiana</option>
+                      <option>Mayotta</option>
+                      <option>Liechtenstein</option>
+                      <option>Denmark</option>
+                      <option>Eritrea</option>
+                      <option>Gibraltar</option>
+                      <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                      <option>Haiti</option>
+                      <option>Namibia</option>
+                      <option>South Georgia and the South Sandwich Islands</option>
+                      <option>Vietnam</option>
+                      <option>Yemen</option>
+                      <option>Philippines</option>
+                      <option>Benin</option>
+                      <option>Czech Republic</option>
+                      <option>Russia</option>
+                    </select>
+                  </div>
+
+                  <div class="col-lg-6 mb-4">
+                    <p style="font-size: 12pt; margin: 0px; padding: 0px;">CNAES</p>
+                    <select class="form-select rounded-3" id="multiple-select-clear-field10" data-placeholder="" multiple>
+                      <option>Christmas Island</option>
+                      <option>South Sudan</option>
+                      <option>Jamaica</option>
+                      <option>Kenya</option>
+                      <option>French Guiana</option>
+                      <option>Mayotta</option>
+                      <option>Liechtenstein</option>
+                      <option>Denmark</option>
+                      <option>Eritrea</option>
+                      <option>Gibraltar</option>
+                      <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                      <option>Haiti</option>
+                      <option>Namibia</option>
+                      <option>South Georgia and the South Sandwich Islands</option>
+                      <option>Vietnam</option>
+                      <option>Yemen</option>
+                      <option>Philippines</option>
+                      <option>Benin</option>
+                      <option>Czech Republic</option>
+                      <option>Russia</option>
+                    </select>
+                  </div>
+
                   <div class="col-lg-12 text-center">
                     <br>
                     <button type="button" class="btn btn-light btn-lg rounded-pill fs-6 fw-bold px-5 py-2 mt-lg-5" style="background-color: #77e0e4; border: none;">Simular Valor</button>
@@ -556,42 +621,65 @@
         </div>
       </div>
     </div>
+
     <div class="modal fade" id="pagamento-sucesso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header border-0 p-4">
+            <button type="button" class="btn-close align-items-center justify-content-center d-flex shadow-none" data-bs-dismiss="modal" aria-label="Close">
+              <img src="./img/icon-close-payment.png" alt="Icone de fechar"/>
+            </button>
           </div>
-          <div class="modal-body">
-            <p class="display-6 text-center">Pagamento com sucesso</p>
+          <div class="modal-body p-4">
+            <img src="./img/payment-sucess.png" alt="Pagamento com sucesso"/>
+            <p class="display-6 text-center fw-bold">Pagamento com sucesso</p>
             <p class="text-center">Seu pagamento foi efetuado com sucesso, aguarde a confirmação.</p>
             <p class="text-center">O arquivo será enviado em até um dia útil após a confirmação do pagamento.</p>
           </div>
         </div>
       </div>
     </div>
+
     <div class="modal fade" id="pagamento-recusado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header border-0 p-4">
+            <button type="button" class="btn-close align-items-center justify-content-center d-flex shadow-none" data-bs-dismiss="modal" aria-label="Close">
+              <img src="./img/icon-close-payment.png" alt="Icone de fechar"/>
+            </button>
           </div>
-          <div class="modal-body">
-            <p class="display-6 text-center">Pagamento recusado</p>
+          <div class="modal-body p-4 text-center">
+            <img src="./img/payment-denied.png" alt="Pagamento recusado"/>
+            <p class="display-6 text-center fw-bold">Pagamento recusado</p>
             <p class="text-center">Infelizmente algum problema aconteceu no processamento do pagamento, por favor tente novamente.</p>
+            <button type="button" class="btn btn-light btn-lg rounded-pill fw-bold mt-4 px-5" style="background-color: #77e0e4; border: none;">Tentar novamente</button>
           </div>
         </div>
       </div>
     </div>
+
     <div class="modal fade" id="pagamento-com-boleto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header border-0 p-4">
+            <button type="button" class="btn-close align-items-center justify-content-center d-flex shadow-none" data-bs-dismiss="modal" aria-label="Close">
+              <img src="./img/icon-close-payment.png" alt="Icone de fechar"/>
+            </button>
           </div>
-          <div class="modal-body">
-            <p class="display-6 text-center">Pagamento recusado</p>
-            <p class="text-center">Infelizmente algum problema aconteceu no processamento do pagamento, por favor tente novamente.</p>
+
+          <div class="modal-body p-4">
+            <img src="./img/payment-invoice.png" alt="Pagamento com sucesso"/>
+            <p class="display-6 text-center fw-bold">Pague R$ 100,00 via boleto</p>
+            Vencimento: 27 de novembro às 23:59h
+            <p class="text-center">Para pagar, copie o código e pague pelo app ou site do seu banco, ou baixe o boleto e pague pessoalmente em uma agência bancária</p>
+            <div>
+              <span>7204327402473144021402</span>
+              <button type="button" class="btn btn-light btn-lg rounded-pill fw-bold mt-4 px-5" style="background-color: #77e0e4; border: none;">Copiar código</button>
+            </div>
+            <p>ou</p>
+            <button type="button" class="btn btn-light btn-lg rounded-pill fw-bold mt-4 px-5" style="background-color: #77e0e4; border: none;">Baixar boleto</button>
+            <p>Descrição: Registros SEWE - Ref 164324 registros</p>
+            <p>O arquivo será enviado em até um dia útil após a confirmação do pagamento.</p>
           </div>
         </div>
       </div>

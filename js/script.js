@@ -31,6 +31,16 @@ $( '#multiple-select-clear-field8' ).select2( {
   allowClear: true,
 } );
 
+$( '#multiple-select-clear-field9' ).select2( {
+  closeOnSelect: true,
+  allowClear: true,
+} );
+
+$( '#multiple-select-clear-field10' ).select2( {
+  closeOnSelect: true,
+  allowClear: true,
+} );
+
 if(screen.width <= 991) {
   $('.journey-slick').slick({
     arrows: false
