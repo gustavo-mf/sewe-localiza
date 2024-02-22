@@ -528,7 +528,7 @@
 
                   <div class="col-lg-12 text-center">
                     <br>
-                    <button type="button" class="btn btn-light btn-lg rounded-pill fs-6 fw-bold px-5 py-2 mt-lg-5" style="background-color: #77e0e4; border: none;">Simular Valor</button>
+                    <button type="button" class="btn btn-light btn-lg rounded-pill fs-6 fw-bold px-5 py-2 mt-lg-5">Simular Valor</button>
                   </div>
                 </div>
               </div>
@@ -539,28 +539,32 @@
     </div>
 
     <!-- 5 - Resultado formulário -->
-    <div class="section-businessman row g-3" style="margin-top: 70px">
+    <div class="section-businessman row g-3" id="form-result" style="margin-top: 70px">
       <div class="businessman-big px-0 col-lg-12">
         <div class="rounded shadow">
           <div class="bg-white">
             <div class="card border-0">
-              <div class="card-body" style="padding: 10px 50px 10px 50px">
+              <div class="card-body px-lg-5 py-lg-4">
                 <div class="row" style="display: flex; align-items: center;">
+                  <div class="col-lg-12">
+                    <p>
+                      <img src="https://localizaempresa.com.br/Template/group.svg" style="display: inline; width: 20px; height: 20px;"> 
+                      <b class="fs-5 ms-2">Localizar Agora</b>
+                    </p>
+                    <p class="fs-6 mb-5">Escolha filtros, confira CNPJs e receba dados em até 1 dia útil pós-pagamento.</p>
+                  </div>
 
                   <div class="col-lg-3">
-                    <p style="margin: 0px; padding: 0px; font-size: 12pt;">Total de Registros</p>
-                    <p><b>59.128.296</b></p>
+                    <p class="fw-bold" style="margin: 0px; padding: 0px; font-size: 12pt;">Total de Registros</p>
+                    <p><b>150</b></p>
                   </div>
                   <div class="col-lg-3">
-                    <p style="margin: 0px; padding: 0px; font-size: 12pt;">Valor total</p>
+                    <p class="fw-bold" style="margin: 0px; padding: 0px; font-size: 12pt;">Valor total</p>
                     <p><b>R$ 236.513,18</b></p>
                   </div>
-                  <div class="col-lg-6 text-center">
-                    <button type="button" class="btn btn-dark btn-lg rounded-pill text"
-                      style="border: none; margin-right: 10px; margin-top: 10px">Nova consulta</button>
-                    <button type="button" class="btn btn-light btn-lg rounded-pill text"
-                      style="background-color: #77e0e4; border: none; margin-top: 10px" data-bs-toggle="modal"
-                      data-bs-target="#paymentModal">Processar pagamento</button>
+                  <div class="col-lg-6 text-end btns-form-result">
+                    <button type="button" class="btn fw-bold border-0 text-decoration-underline" style="margin-right: 10px; margin-top: 10px">Nova consulta</button>
+                    <button type="button" class="btn btn-light btn-lg rounded-pill text fs-6 fw-bold px-5 py-2" style="margin-top: 10px" data-bs-toggle="modal" data-bs-target="#paymentModal">Processar pagamento</button>
                   </div>
                 </div>
               </div>
@@ -600,19 +604,13 @@
               <div class="card-body" style="padding: 10px 50px 10px 50px">
                 <div class="row" style="display: flex; align-items: center;">
                   <div class="col-lg-3">
-                    <button type="button" class="btn btn-light btn-lg rounded-pill"
-                      style="background-color: #77e0e4; border: none;" data-bs-toggle="modal"
-                      data-bs-target="#pagamento-sucesso">Pago com sucesso</button>
+                    <button type="button" class="btn btn-light btn-lg rounded-pill" data-bs-toggle="modal" data-bs-target="#pagamento-sucesso">Pago com sucesso</button>
                   </div>
                   <div class="col-lg-3">
-                    <button type="button" class="btn btn-light btn-lg rounded-pill"
-                      style="background-color: #77e0e4; border: none;" data-bs-toggle="modal"
-                      data-bs-target="#pagamento-recusado">Pagamento recusado</button>
+                    <button type="button" class="btn btn-light btn-lg rounded-pill" data-bs-toggle="modal" data-bs-target="#pagamento-recusado">Pagamento recusado</button>
                   </div>
                   <div class="col-lg-3">
-                    <button type="button" class="btn btn-light btn-lg rounded-pill"
-                      style="background-color: #77e0e4; border: none;" data-bs-toggle="modal"
-                      data-bs-target="#pagamento-com-boleto">Pagamento com boleto</button>
+                    <button type="button" class="btn btn-light btn-lg rounded-pill" data-bs-toggle="modal" data-bs-target="#pagamento-com-boleto">Pagamento com boleto</button>
                   </div>
                 </div>
               </div>
@@ -652,7 +650,7 @@
             <img src="./img/payment-denied.png" alt="Pagamento recusado"/>
             <p class="display-6 text-center fw-bold">Pagamento recusado</p>
             <p class="text-center">Infelizmente algum problema aconteceu no processamento do pagamento, por favor tente novamente.</p>
-            <button type="button" class="btn btn-light btn-lg rounded-pill fw-bold mt-4 px-5" style="background-color: #77e0e4; border: none;">Tentar novamente</button>
+            <button type="button" class="btn btn-light btn-lg rounded-pill fw-bold mt-4 px-5">Tentar novamente</button>
           </div>
         </div>
       </div>
@@ -667,19 +665,21 @@
             </button>
           </div>
 
-          <div class="modal-body p-4">
+          <div class="modal-body p-lg-4 text-center">
             <img src="./img/payment-invoice.png" alt="Pagamento com sucesso"/>
-            <p class="display-6 text-center fw-bold">Pague R$ 100,00 via boleto</p>
-            Vencimento: 27 de novembro às 23:59h
-            <p class="text-center">Para pagar, copie o código e pague pelo app ou site do seu banco, ou baixe o boleto e pague pessoalmente em uma agência bancária</p>
-            <div>
-              <span>7204327402473144021402</span>
-              <button type="button" class="btn btn-light btn-lg rounded-pill fw-bold mt-4 px-5" style="background-color: #77e0e4; border: none;">Copiar código</button>
+            <p class="fs-35 fw-bold color-e1 mb-0">Pague R$ 100,00 via boleto</p>
+            <span class="fs-14 color-81 date">Vencimento: 27 de novembro às 23:59h</span>
+            <div class="border-box pt-4 pb-0 px-2 px-lg-3 mb-4">
+              <p class="text-center fs-16 color-81">Para pagar, copie o código e pague pelo app ou site do seu banco, ou baixe o boleto e pague pessoalmente em uma agência bancária</p>
+              <div class="border-box d-flex align-items-center justify-content-between p-2 mb-3">
+                <span class="fs-14 color-6b">7204327402473144021402</span>
+                <button type="button" class="btn btn-light btn-lg rounded-pill fw-bold m-0 py-1 px-4 fs-12">Copiar código</button>
+              </div>
+              <p class="fs-16 color-81 mb-3">ou</p>
+              <button type="button" class="btn btn-light btn-lg rounded-pill fw-bold mt-0 mb-4 py-3 px-5 fs-16">Baixar boleto</button>
+              <p class="fs-14 color-81">Descrição: Registros SEWE - Ref 164324 registros</p>
             </div>
-            <p>ou</p>
-            <button type="button" class="btn btn-light btn-lg rounded-pill fw-bold mt-4 px-5" style="background-color: #77e0e4; border: none;">Baixar boleto</button>
-            <p>Descrição: Registros SEWE - Ref 164324 registros</p>
-            <p>O arquivo será enviado em até um dia útil após a confirmação do pagamento.</p>
+            <p class="fs-16 color-45">O arquivo será enviado em até um dia útil após a confirmação do pagamento.</p>
           </div>
         </div>
       </div>

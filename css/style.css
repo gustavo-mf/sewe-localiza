@@ -1,5 +1,10 @@
 body { font-family: "Poppins", sans-serif; }
 
+.btn.btn-light.btn-lg.rounded-pill {
+  background-color: #77e0e4; 
+  border: none;
+}
+
 nav.navbar, #firstContent, #secondContent {
   max-width: 1328px;
   width: 100%;
@@ -108,6 +113,10 @@ nav.navbar {
 
 .select2-container { width: 100% !important; }
 
+#form-result .businessman-big p {
+  font-size: 36px;
+}
+
 /* Modais */
 
 .modal-dialog { 
@@ -123,6 +132,33 @@ nav.navbar {
 }
 
 .modal .modal-body > p:not(.display-6) { color: #81818E; }
+
+.fs-35 { font-size: 35px; }
+.fs-16 { font-size: 16px; }
+.fs-14 { font-size: 14px; }
+.fs-12 { font-size: 12px; }
+
+.color-e1 { color: #1E1E1E !important; }
+.color-81 { color: #81818E !important; }
+.color-45 { color: #454550 !important; }
+.color-6b { color: #6B7280 !important; }
+
+.border-box { 
+  border: 1px solid #E6E6E6;
+  border-radius: 12px;
+}
+
+#pagamento-com-boleto .date {
+  margin-bottom: 1em;
+  display: block;
+}
+
+#pagamento-com-boleto .border-box .border-box {
+  max-width: 433px;
+  margin: 0 auto;
+}
+
+/*  */
 
 @media (min-width: 992px) and (max-width: 1370px) {
   nav.navbar, #firstContent, #secondContent {
@@ -206,6 +242,30 @@ nav.navbar {
   #como-funciona .businessman-big .card-body .col-lg-4 {
     width: 75%;
     margin-left: auto;
+  }
+
+  #form-result .btns-form-result {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  #form-result .btns-form-result button { 
+    margin-top: 3em !important;
+    max-width: 257px;
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+  }
+
+  #pagamento-com-boleto .border-box > .border-box > span {
+    word-break: break-word;
+    text-align: left;
+  }
+
+  #pagamento-com-boleto .border-box > .border-box > button {
+    width: 157px;
+    margin-left: 1em !important;
   }
 }
 
